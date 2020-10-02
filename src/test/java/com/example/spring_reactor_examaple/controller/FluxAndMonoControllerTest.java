@@ -112,7 +112,7 @@ public class FluxAndMonoControllerTest {
     @Test
     public void mono() {
 
-        Integer expectedValue = new Integer(1);
+        Integer expectedValue = 1;
 
         webTestClient.get().uri("/mono")
                 .accept(MediaType.APPLICATION_JSON_UTF8)
