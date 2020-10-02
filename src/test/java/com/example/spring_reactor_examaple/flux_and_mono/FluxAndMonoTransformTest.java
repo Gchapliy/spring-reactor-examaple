@@ -113,7 +113,7 @@ public class FluxAndMonoTransformTest {
     }
 
     @Test
-    public void tranformUsingFlatMap_usingparallel(){
+    public void transformUsingFlatMap_using_parallel(){
 
         Flux<String> stringFlux = Flux.fromIterable(Arrays.asList("A","B","C","D","E","F")) // Flux<String>
                 .window(2) //Flux<Flux<String> -> (A,B), (C,D), (E,F)
@@ -128,7 +128,7 @@ public class FluxAndMonoTransformTest {
     }
 
     @Test
-    public void tranformUsingFlatMap_parallel_maintain_order(){
+    public void transformUsingFlatMap_parallel_maintain_order(){
 
         Flux<String> stringFlux = Flux.fromIterable(Arrays.asList("A","B","C","D","E","F")) // Flux<String>
                 .window(2) //Flux<Flux<String> -> (A,B), (C,D), (E,F)
