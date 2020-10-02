@@ -2,9 +2,10 @@ package com.example.spring_reactor_examaple.flux_and_mono;
 
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-public class FluxAndMono {
+public class FluxAndMonoTest {
     @Test
     public void fluxTest() {
         Flux<String> stringFlux = Flux.just("Spring", "Spring Boot", "Reactive Spring")
@@ -64,6 +65,22 @@ public class FluxAndMono {
         StepVerifier.create(stringFlux)
                 .expectNextCount(3)
                 .expectErrorMessage("Exception Occurred")
+                .verify();
+    }
+
+    @Test
+    public void monoTest(){
+        Mono<String> stringMono = Mono.just("Spring");
+
+        StepVerifier.create(stringMono.log())
+                .expectNext("Spring")
+                .verifyComplete();
+    }
+
+    @Test
+    public void monoTest_Error(){
+        StepVerifier.create(Mono.error(new RuntimeException("Exception Occurred")).log())
+                .expectError(RuntimeException.class)
                 .verify();
     }
 }
