@@ -1,4 +1,4 @@
-package com.example.spring_reactor_examaple.handler;
+package com.example.spring_reactor_example.handler;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;

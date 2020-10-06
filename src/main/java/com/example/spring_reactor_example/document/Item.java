@@ -1,4 +1,4 @@
-package com.example.spring_reactor_examaple.document;
+package com.example.spring_reactor_example.document;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

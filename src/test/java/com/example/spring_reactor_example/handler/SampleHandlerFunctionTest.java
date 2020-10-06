@@ -1,4 +1,4 @@
-package com.example.spring_reactor_examaple.handler;
+package com.example.spring_reactor_example.handler;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

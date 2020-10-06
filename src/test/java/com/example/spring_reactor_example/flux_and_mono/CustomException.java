@@ -1,4 +1,4 @@
-package com.example.spring_reactor_examaple.flux_and_mono;
+package com.example.spring_reactor_example.flux_and_mono;
 
 public class CustomException extends Throwable {
 

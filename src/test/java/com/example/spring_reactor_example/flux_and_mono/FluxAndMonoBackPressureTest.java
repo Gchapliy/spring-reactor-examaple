@@ -1,4 +1,4 @@
-package com.example.spring_reactor_examaple.flux_and_mono;
+package com.example.spring_reactor_example.flux_and_mono;
 
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.BaseSubscriber;

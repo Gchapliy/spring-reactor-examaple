@@ -1,6 +1,6 @@
-package com.example.spring_reactor_examaple.router;
+package com.example.spring_reactor_example.router;
 
-import com.example.spring_reactor_examaple.handler.SampleHandlerFunction;
+import com.example.spring_reactor_example.handler.SampleHandlerFunction;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

@@ -1,4 +1,4 @@
-package com.example.spring_reactor_examaple.controller;
+package com.example.spring_reactor_example.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
